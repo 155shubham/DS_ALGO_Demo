@@ -33,7 +33,7 @@ namespace Prims_MinCost_SPT
 
             for (int i = 0; i < v; i++)
             {
-                for (int j = 0; j < v; j++)
+                for (int j = i+1; j < v; j++)
                 {
                     if (min != 0 && m[i, j] != 0 && m[i, j] < min)
                     {
@@ -56,7 +56,7 @@ namespace Prims_MinCost_SPT
 
             min = 0;
 
-            // To test the first edges
+            ////To test the first edges
             //for (int k = 0; k < visitedEdges.Count; k++)
             //{
             //    Console.WriteLine("Visited Edge: {0}", visitedEdges[k].ToString());
